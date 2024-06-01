@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Game!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Game!</h1>
+    </header>
+    <div id="game-container">
+        <canvas id="gc" class="game-canvas" width="500" height="600"></canvas>
+    </div>
+    <div class="arrow-keys-container">
+        <a class="up arrow-button" onclick="Snake.action('up')"><i class="chevron up"></i></a>
+        <br>
+        <a class="left arrow-button" onclick="Snake.action('left')"><i class="chevron left"></i></a>
+        <a class="down arrow-button" onclick="Snake.action('down')"><i class="chevron down"></i></a>
+        <a class="right arrow-button" onclick="Snake.action('right')"><i class="chevron right"></i></a>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

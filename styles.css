@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #2d9293; /* Tea Green */
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.game-canvas {
+    width: 100%;
+    max-width: 500px;
+    height: 70vh;
+    border-radius: 30px;
+    background-color: #ffffff; /* White */
+    border: 3px solid #2d9293; /* Tea Green */
+}
+
+.arrow-keys-container {
+    text-align: center;
+}
+
+.arrow-button {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: grey; /* Black */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #555555; /* Dark Gray */
+}
+
+.chevron::before {
+    border-style: solid;
+    border-width: 2px 4px 0 0;
+    display: inline-block;
+    content: '';
+    height: 8px;
+    width: 8px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.chevron.down::before {
+    transform: rotate(135deg);
+}
+
+.chevron.right::before {
+    transform: rotate(45deg);
+}
+
+.chevron.left::before {
+    transform: rotate(225deg);
+}
